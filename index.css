@@ -178,7 +178,8 @@ main {
   flex-wrap: wrap;
   gap: 3.5rem;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-inline: 4rem;
 }
 
 .footer-brand {
@@ -194,12 +195,11 @@ main {
 }
 
 .footer-columns .footer-column:first-child {
-  margin-left: 4rem;
   text-align: center;
 }
 
 .footer-columns .footer-column:first-child ul {
-  justify-items: center;
+  justify-content: center;
 }
 
 .footer-columns .footer-column:last-child {
@@ -207,7 +207,7 @@ main {
 }
 
 .footer-columns .footer-column:last-child ul {
-  justify-items: end;
+  justify-content: flex-end;
 }
 
 .footer-column h2 {
@@ -282,7 +282,4 @@ main {
     font-size: 1.05rem;
   }
 
-  .footer-columns .footer-column:first-child {
-    margin-left: 0;
-  }
 }
