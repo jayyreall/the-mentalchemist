@@ -184,7 +184,7 @@ main {
   flex-wrap: wrap;
   gap: 3.5rem;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .footer-brand {
@@ -201,6 +201,19 @@ main {
 
 .footer-columns .footer-column:first-child {
   margin-left: 4rem;
+  text-align: center;
+}
+
+.footer-columns .footer-column:first-child ul {
+  justify-items: center;
+}
+
+.footer-columns .footer-column:last-child {
+  text-align: right;
+}
+
+.footer-columns .footer-column:last-child ul {
+  justify-items: end;
 }
 
 .footer-column h2 {
