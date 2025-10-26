@@ -153,6 +153,17 @@ main {
 
 .testimonial-figure figure {
   margin: 0;
+  max-width: 320px;
+  margin-left: auto;
+}
+
+.testimonial-figure img {
+  width: 100%;
+}
+
+.testimonial-figure .container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .testimonial-figure figcaption {
