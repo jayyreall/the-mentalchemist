@@ -59,7 +59,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3.25rem;
   padding: 0;
   margin: 0 0 2rem 0;
 }
@@ -67,7 +67,7 @@ img {
 .primary-nav a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.15rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
@@ -104,6 +104,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  font-size: 2.25rem;
   margin: 0 0 1.5rem 0;
 }
 
@@ -113,24 +114,8 @@ main {
   max-width: 62ch;
 }
 
-.panel-figure {
-  margin: 0;
-  text-align: center;
-}
-
-.panel-figure figcaption {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .panel-what {
   background: var(--taupe);
-  color: var(--cream);
-}
-
-.panel-what .panel-figure figcaption {
   color: var(--cream);
 }
 
@@ -163,8 +148,39 @@ main {
   color: var(--black);
 }
 
+.panel-founder .panel-inner {
+  align-items: center;
+  gap: 3rem;
+}
+
+.panel-founder .panel-media {
+  flex: 0 0 260px;
+}
+
+.panel-founder .panel-media img {
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
 .panel-founder .panel-text h2 {
   color: var(--black);
+}
+
+.testimonial-figure {
+  background: var(--cream);
+  padding-block: 3rem;
+  text-align: center;
+}
+
+.testimonial-figure figure {
+  margin: 0;
+}
+
+.testimonial-figure figcaption {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .quote-band {
@@ -206,6 +222,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 2rem;
   flex: 1 1 360px;
+}
+
+.footer-columns .footer-column:first-child {
+  margin-left: 1.5rem;
 }
 
 .footer-column h2 {
@@ -315,13 +335,16 @@ main {
     justify-content: space-between;
   }
 
-  .panel-figure,
   .panel-links {
     flex: 0 0 320px;
   }
 
   .panel-text {
     flex: 1 1 420px;
+  }
+
+  .panel-founder .panel-media {
+    flex: 0 0 300px;
   }
 }
 
@@ -333,11 +356,15 @@ main {
 
   .panel-text h1,
   .panel-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 0.08em;
   }
 
   .quote-band blockquote {
     font-size: 1.05rem;
+  }
+
+  .footer-columns .footer-column:first-child {
+    margin-left: 0;
   }
 }
