@@ -59,7 +59,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 3.25rem;
+  gap: 5rem;
   padding: 0;
   margin: 0 0 2rem 0;
 }
@@ -124,11 +124,6 @@ main {
   color: var(--cream);
 }
 
-.panel-services .panel-links {
-  display: grid;
-  gap: 0.75rem;
-}
-
 .panel-services .panel-link {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -136,11 +131,6 @@ main {
   text-transform: uppercase;
   color: var(--cream);
   text-decoration: none;
-}
-
-.panel-services .panel-link:hover,
-.panel-services .panel-link:focus {
-  text-decoration: underline;
 }
 
 .panel-founder {
@@ -167,7 +157,7 @@ main {
 }
 
 .testimonial-figure {
-  background: var(--cream);
+  background: var(--taupe);
   padding-block: 3rem;
   text-align: center;
 }
@@ -225,7 +215,7 @@ main {
 }
 
 .footer-columns .footer-column:first-child {
-  margin-left: 1.5rem;
+  margin-left: 4rem;
 }
 
 .footer-column h2 {
