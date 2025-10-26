@@ -147,19 +147,24 @@ main {
 
 .testimonial-figure {
   background: var(--taupe);
+  color: var(--cream);
   padding-block: 3rem;
   text-align: center;
 }
 
 .testimonial-figure figure {
   margin: 0;
+  max-width: 400px;
+  margin-left: auto;
 }
 
-.testimonial-figure figcaption {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.testimonial-figure img {
+  width: 100%;
+}
+
+.testimonial-figure .container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .site-footer {
