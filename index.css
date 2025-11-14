@@ -67,7 +67,7 @@ figcaption {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   padding: 0;
   margin: 0 0 2rem 0;
 }
@@ -241,7 +241,7 @@ main > section {
 
 .testimonial-grid figure {
   margin: 0;
-  max-width: 260px;
+  max-width: 320px;
 }
 
 .panel-services .panel-text {
@@ -325,6 +325,6 @@ main > section {
 
 @media (max-width: 600px) {
   .primary-nav ul {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
