@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:ital@1&family=Work+Sans:wght@400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Work+Sans:wght@400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
 </head>
@@ -36,17 +36,29 @@
       <div class="container panel-inner">
         <div class="panel-text">
           <h1>What is Mentalchemy</h1>
-          <p>Transforming the everyday into intentional artistry, Mentalchemy brings a holistic, trauma-informed lens to creative
-            support. We meet artists where they are, cultivating confidence, sustainability, and joy.</p>
+          <div class="panel-text-two-column">
+            <p>Transforming the everyday into intentional artistry, Mentalchemy brings a holistic, trauma-informed lens to creative
+              support.</p>
+            <p>We meet artists where they are, cultivating confidence, sustainability, and joy while equipping them with tools that
+              honor their craft.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="testimonial-figure" aria-label="Client testimonial imagery">
-      <div class="container">
+      <div class="container testimonial-grid">
+        <figure>
+          <img src="./assets/mentalchemist-testimonial.png" alt="Client testimonial displayed inside chat bubble">
+          <figcaption>Client reflection &mdash; Touring artist</figcaption>
+        </figure>
         <figure>
           <img src="./assets/mentalchemist-testimonial.png" alt="Client testimonial displayed inside chat bubble">
           <figcaption>Anonymous client testimonial</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/mentalchemist-testimonial.png" alt="Client testimonial displayed inside chat bubble">
+          <figcaption>Client feedback &mdash; Emerging producer</figcaption>
         </figure>
       </div>
     </section>
@@ -64,8 +76,10 @@
     <section class="panel panel-founder">
       <div class="container panel-inner">
         <div class="panel-media">
-          <img src="./assets/toria-profile.jpg" alt="Portrait of Toria, founder of The Mentalchemist">
-          <figcaption>Toria Hawkins, LMSW, MPH</figcaption>
+          <figure>
+            <img src="./assets/mentalchemist-header-logo.png" alt="The Mentalchemist wordmark">
+            <figcaption>Toria Hawkins, LMSW, MPH</figcaption>
+          </figure>
         </div>
         <div class="panel-text">
           <h2>Meet the Founder</h2>
@@ -75,32 +89,31 @@
       </div>
     </section>
 
+  </main>
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
+    <div class="container footer-grid">
+      <div class="footer-column footer-logo-column">
         <a href="./" class="footer-logo">
           <img src="./assets/mentalchemist-footer-logo.png" alt="The Mentalchemist minimal logo">
         </a>
       </div>
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h2>About</h2>
-          <ul>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./about.html#policies">Policies</a></li>
-            <li><a href="./about.html#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h2>Products &amp; Services</h2>
-          <ul>
-            <li><a href="./services.html#digital-products">Digital Products</a></li>
-            <li><a href="./services.html#music-coaching">Music Coaching</a></li>
-            <li><a href="./services.html#somatic-coaching">Somatic Coaching</a></li>
-            <li><a href="./services.html#matching-services">Matching Services</a></li>
-          </ul>
-        </div>
+      <div class="footer-column">
+        <h2>About</h2>
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./about.html#policies">Policies</a></li>
+          <li><a href="./about.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Products &amp; Services</h2>
+        <ul>
+          <li><a href="./services.html#digital-products">Digital Products</a></li>
+          <li><a href="./services.html#music-coaching">Music Coaching</a></li>
+          <li><a href="./services.html#somatic-coaching">Somatic Coaching</a></li>
+          <li><a href="./services.html#matching-services">Matching Services</a></li>
+        </ul>
       </div>
     </div>
     <p class="legal">All rights reserved The Mentalchemist LLC.</p>
