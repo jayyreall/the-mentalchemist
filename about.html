@@ -8,82 +8,88 @@
   <title>Mentalchemy | About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:ital@0;1&family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
-    <div class="logo-area">
-      <a href="/" class="logo-link">
-        <img src="/assets/logo-full.svg" alt="Mentalchemy full logo">
-      </a>
+    <div class="container">
+      <div class="header-logo">
+        <a href="./">
+          <img src="./assets/mentalchemist-header-logo.png" alt="The Mentalchemist full logo">
+        </a>
+      </div>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./services.html">Products &amp; Services</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="primary-nav" aria-label="Primary">
-      <ul>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/services.html">Products &amp; Services</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
   </header>
   <main id="main-content">
-    <h1>About Mentalchemy</h1>
-
-    <section id="what-is-mentalchemy" aria-labelledby="about-intro-heading">
-      <h2 id="about-intro-heading">What is Mentalchemy</h2>
-      <p>Mentalchemy is a holistic studio supporting musicians and creative practitioners through trauma-informed, somatic, and artistic care. We combine evidence-backed wellbeing strategies with deep industry experience to cultivate sustainable creative lives.</p>
+    <section class="page-section" aria-labelledby="about-hero-heading">
+      <div class="container section-inner">
+        <h1 id="about-hero-heading">About Mentalchemy</h1>
+        <p>Mentalchemy is a holistic studio supporting musicians and creative practitioners through trauma-informed, somatic, and artistic care. We combine evidence-backed wellbeing strategies with deep industry experience to cultivate sustainable creative lives.</p>
+      </div>
     </section>
 
-    <section id="values" aria-labelledby="values-heading">
-      <h2 id="values-heading">Values That Guide Us</h2>
-      <ul>
-        <li>Compassion-first relationships that honor personal stories.</li>
-        <li>Equity-minded services for artists across identities and genres.</li>
-        <li>Curiosity-driven experimentation that keeps creativity vibrant.</li>
-      </ul>
+    <section class="page-section" id="values" aria-labelledby="values-heading">
+      <div class="container section-inner">
+        <h2 id="values-heading">Values That Guide Us</h2>
+        <ul>
+          <li>Compassion-first relationships that honor personal stories.</li>
+          <li>Equity-minded services for artists across identities and genres.</li>
+          <li>Curiosity-driven experimentation that keeps creativity vibrant.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="approach" aria-labelledby="approach-heading">
-      <h2 id="approach-heading">Our Integrative Approach</h2>
-      <p>By blending somatic awareness, music coaching, and community-informed practices, Mentalchemy helps artists build resilience on and off the stage. We collaborate with each client to design a pathway that matches their rhythms, needs, and ambitions.</p>
+    <section class="page-section" id="approach" aria-labelledby="approach-heading">
+      <div class="container section-inner">
+        <h2 id="approach-heading">Our Integrative Approach</h2>
+        <p>By blending somatic awareness, music coaching, and community-informed practices, Mentalchemy helps artists build resilience on and off the stage. We collaborate with each client to design a pathway that matches their rhythms, needs, and ambitions.</p>
+      </div>
     </section>
 
-    <section id="testimonials" aria-labelledby="testimonials-heading">
-      <h2 id="testimonials-heading">Community Testimonials</h2>
-      <blockquote>
-        &ldquo;Their sessions created a brave space where I could process trauma and rediscover joy in performing.&rdquo;
-      </blockquote>
+    <section class="page-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container section-inner">
+        <h2 id="testimonials-heading">Community Testimonials</h2>
+        <blockquote>&ldquo;Their sessions created a brave space where I could process trauma and rediscover joy in performing.&rdquo;</blockquote>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="footer-brand">
-      <a href="/" class="logo-link">
-        <img src="/assets/logo-mini.svg" alt="Mentalchemy mini logo">
-      </a>
-    </div>
-    <div class="footer-links">
+    <div class="container footer-grid">
+      <div class="footer-column footer-logo-column">
+        <a href="./" class="footer-logo">
+          <img src="./assets/mentalchemist-footer-logo.png" alt="The Mentalchemist minimal logo">
+        </a>
+      </div>
       <div class="footer-column">
-        <h2 class="footer-heading">Company</h2>
+        <h2>About</h2>
         <ul>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/services.html">Products &amp; Services</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-          <li><a href="#" rel="nofollow">Policies</a></li>
-          <li><a href="#" rel="nofollow">FAQ</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./about.html#policies">Policies</a></li>
+          <li><a href="./about.html#faq">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h2 class="footer-heading">Products &amp; Services</h2>
+        <h2>Products &amp; Services</h2>
         <ul>
-          <li><a href="/services.html#digital-products">Digital Products</a></li>
-          <li><a href="/services.html#music-coaching">Music Coaching</a></li>
-          <li><a href="/services.html#somatic-coaching">Somatic Coaching</a></li>
-          <li><a href="/services.html#matching-services">Matching Services</a></li>
+          <li><a href="./services.html#digital-products">Digital Products</a></li>
+          <li><a href="./services.html#music-coaching">Music Coaching</a></li>
+          <li><a href="./services.html#somatic-coaching">Somatic Coaching</a></li>
+          <li><a href="./services.html#matching-services">Matching Services</a></li>
         </ul>
       </div>
     </div>
-    <p class="footer-note">&copy; <span id="year">2024</span> Mentalchemy. All rights reserved.</p>
+    <p class="legal">All rights reserved The Mentalchemist LLC.</p>
   </footer>
 </body>
 </html>
