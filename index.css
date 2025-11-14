@@ -215,8 +215,8 @@ main > section {
 }
 
 .testimonial-figure {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
   padding-block: 3rem;
   text-align: center;
 }
