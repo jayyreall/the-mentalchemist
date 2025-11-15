@@ -146,14 +146,14 @@ main > section {
   gap: 0.85rem;
 }
 
-.panel-text-two-column {
+.panel-what-text {
   width: 100%;
   max-width: 62ch;
   margin-inline: auto;
   text-align: center;
 }
 
-.panel-text-two-column p {
+.panel-what-text p {
   max-width: 62ch;
 }
 
