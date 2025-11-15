@@ -4,6 +4,15 @@
   color: var(--cream);
 }
 
+#digital-products figure {
+  margin: 0;
+}
+
+#digital-products img {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 #digital-products a,
 #somatic-coaching a {
   color: inherit;
