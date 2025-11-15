@@ -1,0 +1,8 @@
+#values {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#values a {
+  color: inherit;
+}
