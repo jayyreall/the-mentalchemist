@@ -1,0 +1,10 @@
+#digital-products,
+#somatic-coaching {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#digital-products a,
+#somatic-coaching a {
+  color: inherit;
+}
