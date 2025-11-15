@@ -148,19 +148,13 @@ main > section {
 
 .panel-text-two-column {
   width: 100%;
-  display: grid;
-  gap: 1.5rem;
-  justify-items: center;
+  max-width: 62ch;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .panel-text-two-column p {
-  max-width: 36ch;
-}
-
-@media (min-width: 700px) {
-  .panel-text-two-column {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  max-width: 62ch;
 }
 
 .page-section p,
