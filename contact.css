@@ -1,0 +1,16 @@
+@import url('./index.css');
+
+.quote-section {
+  background: var(--taupe);
+  color: var(--cream);
+  padding-block: 3rem;
+}
+
+.quote-section blockquote {
+  margin: 0 auto;
+  max-width: 62ch;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--cream);
+}
