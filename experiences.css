@@ -1,0 +1,10 @@
+#immersive-experiences,
+#community {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#immersive-experiences a,
+#community a {
+  color: inherit;
+}
