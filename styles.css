@@ -324,6 +324,12 @@ main > section {
 
 .values-web-figure img {
   margin-inline: auto;
+  max-width: 700px;
+}
+
+.start-here-figure img {
+  max-width: 700px;
+  margin-inline: auto;
 }
 
 /* Footer */
@@ -447,13 +453,34 @@ main > section {
 }
 
 /* About */
-#values {
+.values-block {
   background: var(--taupe);
   color: var(--cream);
+  width: 100%;
 }
 
-#values a {
+.values-block #values,
+.values-block .values-web-figure {
+  padding-block: 3rem;
+}
+
+#values a,
+.values-web-figure a {
   color: inherit;
+}
+
+.values-web-figure {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.values-web-figure figure {
+  margin: 0;
+}
+
+#values + .values-web-figure {
+  margin-top: -2rem;
 }
 
 /* Products */
