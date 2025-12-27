@@ -1,3 +1,4 @@
+/* Base palette */
 :root {
   --sage: #636C5A;
   --cream: #F9F2E8;
@@ -6,6 +7,7 @@
   --forest: #3F4A3D;
 }
 
+/* Global resets and typography */
 * {
   box-sizing: border-box;
 }
@@ -35,12 +37,96 @@ figcaption {
   text-align: center;
 }
 
+/* Layout helpers */
 .container {
   max-width: 1100px;
   margin-inline: auto;
   padding-inline: 1.5rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 2rem 4rem;
+}
+
+main > section {
+  width: 100%;
+  text-align: center;
+}
+
+.panel,
+.page-section {
+  padding-block: 3rem;
+}
+
+.panel .panel-inner,
+.page-section .section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.panel-text h1,
+.panel-text h2,
+.page-section h1,
+.page-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  margin: 0 0 1.5rem 0;
+}
+
+.panel-text p {
+  margin: 0 auto;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.panel-text ul {
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 62ch;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.panel-what-text {
+  width: 100%;
+  max-width: 62ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.panel-what-text p {
+  max-width: 62ch;
+}
+
+.page-section p,
+.page-section ul,
+.page-section blockquote {
+  margin: 0 auto;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.page-section ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.page-section blockquote {
+  font-style: italic;
+}
+
+/* Navigation */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -151,88 +237,7 @@ figcaption {
   margin: 0 auto 1.5rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding-block: 2rem 4rem;
-}
-
-main > section {
-  width: 100%;
-  text-align: center;
-}
-
-.panel,
-.page-section {
-  padding-block: 3rem;
-}
-
-.panel .panel-inner,
-.page-section .section-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.panel-text h1,
-.panel-text h2,
-.page-section h1,
-.page-section h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
-  margin: 0 0 1.5rem 0;
-}
-
-.panel-text p {
-  margin: 0 auto;
-  line-height: 1.6;
-  max-width: 62ch;
-}
-
-.panel-text ul {
-  margin: 0 auto;
-  padding-left: 1.25rem;
-  line-height: 1.6;
-  text-align: left;
-  max-width: 62ch;
-  display: grid;
-  gap: 0.85rem;
-}
-
-.panel-what-text {
-  width: 100%;
-  max-width: 62ch;
-  margin-inline: auto;
-  text-align: center;
-}
-
-.panel-what-text p {
-  max-width: 62ch;
-}
-
-.page-section p,
-.page-section ul,
-.page-section blockquote {
-  margin: 0 auto;
-  line-height: 1.6;
-  max-width: 62ch;
-}
-
-.page-section ul {
-  padding: 0;
-  list-style-position: inside;
-}
-
-.page-section blockquote {
-  font-style: italic;
-}
-
+/* Panels and shared sections */
 .panel-what,
 .panel-services {
   background: var(--taupe);
@@ -259,19 +264,6 @@ main > section {
 
 .panel-founder .panel-inner {
   gap: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .panel-founder .panel-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .panel-founder .panel-media,
-  .panel-founder .panel-text {
-    flex: 1;
-  }
 }
 
 .panel-founder .panel-text h2 {
@@ -306,6 +298,11 @@ main > section {
   max-width: 70ch;
 }
 
+.values-web-figure img {
+  margin-inline: auto;
+}
+
+/* Footer */
 .site-footer {
   background: var(--sage);
   color: var(--cream);
@@ -316,13 +313,6 @@ main > section {
 .footer-grid {
   display: grid;
   gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .footer-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: center;
-  }
 }
 
 .footer-column {
@@ -374,6 +364,142 @@ main > section {
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* Page-specific sections */
+/* Where To Start */
+.start-grid {
+  background: rgba(99, 108, 90, 0.1);
+}
+
+.start-cards {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.start-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.start-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.start-card p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.start-link {
+  font-weight: 600;
+  color: var(--sage);
+  text-decoration: none;
+}
+
+.start-link:hover,
+.start-link:focus {
+  text-decoration: underline;
+}
+
+.start-list {
+  max-width: 800px;
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.9rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* About */
+#values {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#values a {
+  color: inherit;
+}
+
+/* Products */
+#workbooks,
+#toolkits {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#workbooks a,
+#toolkits a {
+  color: inherit;
+}
+
+/* Services */
+#digital-products,
+#somatic-coaching {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#digital-products figure {
+  margin: 0;
+}
+
+#digital-products img {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#digital-products a,
+#somatic-coaching a {
+  color: inherit;
+}
+
+/* Experiences */
+#immersive-experiences,
+#community {
+  background: var(--taupe);
+  color: var(--cream);
+}
+
+#immersive-experiences a,
+#community a {
+  color: inherit;
+}
+
+/* Responsive adjustments */
+@media (min-width: 720px) {
+  .start-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .panel-founder .panel-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .panel-founder .panel-media,
+  .panel-founder .panel-text {
+    flex: 1;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+  }
 }
 
 @media (max-width: 600px) {
