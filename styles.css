@@ -412,6 +412,20 @@ main > section {
   color: var(--cream);
 }
 
+section[aria-labelledby="start-steps-main"] {
+  background: var(--cream);
+  color: var(--black);
+}
+
+.start-cards-main {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1000px;
+}
+
 .start-cards {
   display: grid;
   gap: 1.5rem;
@@ -420,13 +434,14 @@ main > section {
 }
 
 .start-card {
-  background: var(--cream);
-  color: var(--black);
+  background: var(--taupe);
+  color: var(--cream);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
   padding: 1.5rem;
   text-align: left;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  flex: 1 1 240px;
 }
 
 .start-card h3 {
