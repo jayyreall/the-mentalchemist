@@ -434,8 +434,8 @@ section[aria-labelledby="start-steps-main"] {
 }
 
 .start-card {
-  background: var(--taupe);
-  color: var(--cream);
+  background: #FFF;
+  color: var(--black);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
   padding: 1.5rem;
