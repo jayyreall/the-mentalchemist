@@ -25,6 +25,16 @@ body {
   font-size: 1.05rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -147,6 +157,7 @@ main > section {
   background: var(--sage);
   padding-block: 1.5rem 2.5rem;
   text-align: center;
+  color: var(--cream);
 }
 
 .primary-nav ul {
@@ -165,8 +176,7 @@ main > section {
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--cream);
+  color: inherit;
 }
 
 .primary-nav a:hover,
@@ -230,7 +240,7 @@ main > section {
 
 .dropdown-menu a {
   display: block;
-  color: var(--cream);
+  color: inherit;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -314,20 +324,7 @@ main > section {
 
 .panel-services .panel-text a {
   color: inherit;
-  text-decoration: none;
   font-weight: 600;
-}
-
-main a {
-  color: var(--forest);
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-main a:hover,
-main a:focus {
-  color: var(--forest);
-  text-decoration: underline;
 }
 
 .panel-services .panel-text a:hover,
@@ -390,8 +387,7 @@ main a:focus {
 }
 
 .footer-column a {
-  color: var(--cream);
-  text-decoration: none;
+  color: inherit;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -448,8 +444,7 @@ main a:focus {
 
 .start-link {
   font-weight: 600;
-  color: var(--sage);
-  text-decoration: none;
+  color: inherit;
 }
 
 .start-link:hover,
