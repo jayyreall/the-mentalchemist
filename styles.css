@@ -324,7 +324,7 @@ main > section {
 
 .values-web-figure img {
   margin-inline: auto;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .start-here-figure img {
@@ -411,7 +411,8 @@ main > section {
 }
 
 .start-card {
-  background: #fff;
+  background: var(--cream);
+  color: var(--black);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
   padding: 1.5rem;
