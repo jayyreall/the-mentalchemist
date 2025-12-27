@@ -3,6 +3,7 @@
   --cream: #F9F2E8;
   --taupe: #7A6F63;
   --black: #000000;
+  --forest: #3F4A3D;
 }
 
 * {
@@ -111,8 +112,12 @@ figcaption {
 
 .dropdown-menu {
   display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   position: absolute;
   left: 50%;
+  top: calc(100% + 0.5rem);
   transform: translateX(-50%);
   background: var(--forest);
   border-radius: 0.35rem;
@@ -136,6 +141,9 @@ figcaption {
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
   display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .header-logo {
