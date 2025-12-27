@@ -399,7 +399,8 @@ main > section {
 /* Page-specific sections */
 /* Where To Start */
 .start-grid {
-  background: rgba(99, 108, 90, 0.1);
+  background: var(--taupe);
+  color: var(--cream);
 }
 
 .start-cards {
