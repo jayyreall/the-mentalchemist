@@ -408,8 +408,8 @@ main > section {
 /* Page-specific sections */
 /* Where To Start */
 .start-grid {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
 }
 
 section[aria-labelledby="start-steps-main"] {
@@ -479,8 +479,8 @@ section[aria-labelledby="start-steps-main"] {
 
 /* About */
 .values-block {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
   width: 100%;
 }
 
@@ -511,8 +511,8 @@ section[aria-labelledby="start-steps-main"] {
 /* Products */
 #workbooks,
 #toolkits {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
 }
 
 #workbooks a,
@@ -523,8 +523,8 @@ section[aria-labelledby="start-steps-main"] {
 /* Services */
 #digital-products,
 #somatic-coaching {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
 }
 
 #digital-products figure {
@@ -544,8 +544,8 @@ section[aria-labelledby="start-steps-main"] {
 /* Experiences */
 #immersive-experiences,
 #community {
-  background: var(--taupe);
-  color: var(--cream);
+  background: var(--cream);
+  color: var(--black);
 }
 
 #immersive-experiences a,
