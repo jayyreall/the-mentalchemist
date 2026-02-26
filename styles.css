@@ -305,7 +305,7 @@ main > section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .testimonial-grid figure {
@@ -334,7 +334,7 @@ main > section {
 
 .values-web-figure img {
   margin-inline: auto;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .start-here-figure img {
